@@ -1,85 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
+---
+layout: default
+---
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<div class="home">
 
-		<title>HTML</title>
-		<meta name="description" content="">
-		<meta name="author" content="ianmaddaus">
+  <h1 class="page-heading">Posts</h1>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-		<link rel="stylesheet" href="scripts/style.css">
-		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
-		<!-- slideshow from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ --!>
-		<script>
-			
-		$(function() {
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-			$("#slideshow > div:gt(0)").hide();
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-			setInterval(function() {
-			  $('#slideshow > div:first')
-			    .fadeOut(1000)
-			    .next()
-			    .fadeIn(1000)
-			    .end()
-			    .appendTo('#slideshow');
-			},  5000);
-
-		});
-	
-		</script>
-		
-	</head>
-
-	<body>
-		<div>
-			<header>
-				<h1>HTML</h1>
-			</header>
-			
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
-
-			<div>
-				<p>PM 2.5 Emissions from 1999 to 2008</p>
-				<div id="slideshow">
-					<div>
-						<img src="images/PM25Emissions1999.png" />	
-					</div>
-					<div>
-						<img src="images/PM25Emissions2002.png" />
-					</div>
-					<div>
-						<img src="images/PM25Emissions2005.png" />
-					</div>
-					<div>
-						<img src="images/PM25Emissions2008.png" />
-					</div>
-				</div>
-				
-			</div>
-
-			<footer>
-				<p>
-					&copy; Copyright  by ianmaddaus
-				</p>
-			</footer>
-		</div>
-	</body>
-</html>
+</div>
