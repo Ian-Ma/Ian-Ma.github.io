@@ -13,18 +13,21 @@ Emissions Factors][1] and download the data here: [Data.][2]
 
 [2]: <https://d396qusza40orc.cloudfront.net/exdata/data/NEI_data.zip>
 
-I also pulled data showing the square miles of each county in the country from the Census Bureau America [Fact Finder website.][4] 
+I also pulled data showing the square miles of each county in the country from
+the Census Bureau America [Fact Finder website.][3]
+
+[3]: <http://factfinder.census.gov>
 
 I did the work in R and figured out how to do the mapping from this post showing
-how to map unemployment rate by county. [Choropleths in R][3]
+how to map unemployment rate by county. [Choropleths in R][4]
 
-See the repo [here][5]
+[4]: <http://www.thisisthegreenroom.com/2009/choropleths-in-r/>
 
-[3]: <http://www.thisisthegreenroom.com/2009/choropleths-in-r/>
+See the repo [here.][5]
 
-[4]: <http://factfinder.census.gov>
+[5]: <https://github.com/IanMadd/MappingPM25>
 
-[5]: <https://github.com/IanMadd/MappingPM25> 
+ 
 
 ![1999 PM 2.5 Emissions](<{{site.url}}/assets/PM25Emissions1999.png>)
 
