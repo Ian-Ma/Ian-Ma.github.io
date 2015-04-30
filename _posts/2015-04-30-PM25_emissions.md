@@ -18,11 +18,13 @@ I also pulled data showing the square miles of each county in the country from t
 I did the work in R and figured out how to do the mapping from this post showing
 how to map unemployment rate by county. [Choropleths in R][3]
 
+See the repo [here][5]
+
 [3]: <http://www.thisisthegreenroom.com/2009/choropleths-in-r/>
 
 [4]: <http://factfinder.census.gov>
 
- 
+[5]: <https://github.com/IanMadd/MappingPM25> 
 
 ![1999 PM 2.5 Emissions](<{{site.url}}/assets/PM25Emissions1999.png>)
 
