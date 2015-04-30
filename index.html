@@ -16,6 +16,29 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="scripts/style.css">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+		<!-- slideshow from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ --!>
+		<script>
+			
+		$(function() {
+
+			$("#slideshow > div:gt(0)").hide();
+
+			setInterval(function() {
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  5000);
+
+		});
+	
+		</script>
+		
 	</head>
 
 	<body>
@@ -23,6 +46,7 @@
 			<header>
 				<h1>HTML</h1>
 			</header>
+			
 			<nav>
 				<p>
 					<a href="/">Home</a>
@@ -34,10 +58,21 @@
 
 			<div>
 				<p>PM 2.5 Emissions from 1999 to 2008</p>
-				<img src="images/PM25Emissions1999.png" />
-				<img src="images/PM25Emissions2002.png" />
-				<img src="images/PM25Emissions2005.png" />
-				<img src="images/PM25Emissions2008.png" />
+				<div id="slideshow">
+					<div>
+						<img src="images/PM25Emissions1999.png" />	
+					</div>
+					<div>
+						<img src="images/PM25Emissions2002.png" />
+					</div>
+					<div>
+						<img src="images/PM25Emissions2005.png" />
+					</div>
+					<div>
+						<img src="images/PM25Emissions2008.png" />
+					</div>
+				</div>
+				
 			</div>
 
 			<footer>
