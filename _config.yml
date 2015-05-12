@@ -1,8 +1,8 @@
 # Site settings
 title: Ian Maddaus
-email: ianmaddaus@gmail.com
+email: spamforian@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is what interests me or what I'm working on. 
+  This is what interests me or what I'm working on.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ianmadd.github.io" # the base hostname & protocol for your site
 twitter_username: ianmaddaus
