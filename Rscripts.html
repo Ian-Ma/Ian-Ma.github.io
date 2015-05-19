@@ -6,19 +6,15 @@ permalink: /rscripts/
 
 <div class="home">
 
-  <h1 class="page-heading">R Scripts and Reference</h1>
 
   <ul class="post-list">
     {% for page in site.rpages %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+     
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <h5>
-        	{{post.excerpt}}
-        </h5>
+      
       </li>
     {% endfor %}
   </ul>
