@@ -8,11 +8,11 @@ permalink: /rscripts/
 
 
   <ul class="post-list">
-    {% for page in site.rpages %}
+    {% for page in site.pages %}
       <li>
      
         <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ rpage.title }}</a>
+          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         </h2>
       
       </li>
