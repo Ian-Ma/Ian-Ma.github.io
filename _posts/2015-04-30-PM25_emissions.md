@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: jekyll update
+categories: plots and graphics
 date: "2015-04-30 12:23:00"
 title: PM 2.5 Emissions / Year / Sq Mile
 ...
