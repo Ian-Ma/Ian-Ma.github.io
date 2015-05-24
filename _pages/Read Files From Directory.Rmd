@@ -1,6 +1,8 @@
 ---
+layout: page
+resource: true
+categories: [reading_data]
 title: "Read Files Function"
-output: html_document
 ---
 
 This is a function that reads files from a directory and assigns them to the global environment. It gives their variables in the global environment the same name that the original files have in the directory.
