@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ianmadd.github.io" # the base hostname & protocol for your site
 twitter_username: ianmaddaus
 github_username:  IanMadd
-categories: [R_Programming, subsetting_data, transforming_data, plots_and_graphics, functions]
+category-list: [R_Programming, subsetting_data, transforming_data, plots_and_graphics, functions]
 
 # Build settings
 markdown: kramdown
