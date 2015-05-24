@@ -23,31 +23,7 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <ul class="post-list">
 
-	{% for page in site.pages %}
-	  {% if page.categories contains 'plots_and_graphics' %}
-	    <div class="item">
-	      <h3>{{page.title}}</h3>
-	      <p>{{page.description}}</p>  
-	    </div>
-	  {% endif %}
-	{% endfor %}
-  
-  </ul>
-  
-  <ul class="post-list">
-
-	{% for page in site.pages %}
-	  {% if page.categories contains 'R_Programming' %}
-	    <div class="item">
-	      <h3>{{page.title}}</h3>
-	      <p>{{page.description}}</p>  
-	    </div>
-	  {% endif %}
-	{% endfor %}
-  
-  </ul>
 
 
 </div>
