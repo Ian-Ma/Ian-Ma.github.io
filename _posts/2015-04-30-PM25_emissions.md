@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: plots and graphics
+categories: plots_and_graphics
 date: "2015-04-30 12:23:00"
 title: PM 2.5 Emissions / Year / Sq Mile
 ...

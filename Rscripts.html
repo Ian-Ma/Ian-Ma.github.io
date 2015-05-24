@@ -8,17 +8,15 @@ permalink: /rscripts/
 
 
   <ul class="post-list">
-    {% for page in site.pages %}
-      <li>
-     
-        <h2>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </h2>
-      
-      </li>
-    {% endfor %}
-  </ul>
 
+	{% for page in site.pages %}
+	  {% if page.categories contains 'plots_and_graphics' %}
+	    <div class="item">
+	      <h3>{{page.title}}</h3>
+	      <p>{{page.description}}</p>  
+	    </div>
+	  {% endif %}
+	{% endfor %}
   
-
+  </ul>
 </div>
