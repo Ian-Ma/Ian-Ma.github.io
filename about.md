@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+resource: true
 ---
 
 This site shows things that I've been working on and things that interest me. 
