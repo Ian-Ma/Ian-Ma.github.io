@@ -15,7 +15,7 @@ resource: false
 						{% for pc in page.categories %}
 							{% if pc == cat %}
 								<li>
-						  			<a href="{{ page.url }}">{{ page.title }}</a> <h3>&mdash; {{ page.desc }} </h3>
+						  			<a href="{{ page.url }}">{{ page.title }}</a> <h6>&mdash; {{ page.desc }} </h6>
 								</li>
 							{% endif %} <!-- cat-match-p -->
 						{% endfor %} <!-- page-category -->
