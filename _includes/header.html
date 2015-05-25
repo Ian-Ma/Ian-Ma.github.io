@@ -15,10 +15,14 @@
 
       <div class="trigger">
         {% for page in site.pages %}
+        {% if page.resource == false %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
+        {% endif %}  
         {% endfor %}
+        
+      
       </div>
     </nav>
 
