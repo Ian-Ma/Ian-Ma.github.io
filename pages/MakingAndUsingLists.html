@@ -8,7 +8,6 @@ desc: "Everything I could find about lists in R."
 
 
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -163,7 +162,7 @@ x$additionalNumbers[3] &lt;- 2</code></pre>
 <pre><code>## [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot;</code></pre>
 <pre class="r"><code>x$letters</code></pre>
 <pre><code>## [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot;</code></pre>
-<p><br></p>
+<p><br> And you can call elements within a list object. In this case we’re calling for a column and row from the matrix within the list “x”.</p>
 <pre class="r"><code>x$matrix[,4]</code></pre>
 <pre><code>## [1] 13 14 15 16</code></pre>
 <pre class="r"><code>x[[3]][4,]</code></pre>
@@ -220,7 +219,7 @@ x$matrix</code></pre>
 x$mean</code></pre>
 <pre><code>## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7fef78e7e8a0&gt;
+## &lt;bytecode: 0x7fb0eb0d30d8&gt;
 ## &lt;environment: namespace:base&gt;</code></pre>
 <pre class="r"><code>x$mean(x$matrix)</code></pre>
 <pre><code>## [1] 12.5</code></pre>
