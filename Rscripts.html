@@ -11,8 +11,9 @@ Usually I produce these guides because I don't understand how to do something in
 A good chunk of this has been somewhat shamelessly ripped off of the Data Science courses on Coursera from JHU.
 </h5>
 </p>
+</p>
 	{% for cat in site.category-list %}
-		{{ cat }}
+		<b>{{ cat }}</b>
 			<ul>
 				{% for page in site.pages %}
 					{% if page.resource == true %}
