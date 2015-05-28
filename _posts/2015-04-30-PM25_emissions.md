@@ -1,7 +1,5 @@
 ---
 layout: page
-resource: true
-categories: [Plots and Graphics]
 date: "2015-04-30 12:23:00"
 title: PM 2.5 Emissions / Year / Sq Mile
 ...
