@@ -4,8 +4,8 @@ resource: true
 categories: [Extras]
 title: "Reinstall R packages during R reinstall"
 desc: "An easy way to reinstall R packages when reinstalling R."
-
 ---
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -80,6 +80,14 @@ img {
 <p>Then run these commands to save a list of packages in that directory:</p>
 <pre><code>    packages &lt;- installed.packages()[,&quot;Package&quot;] &lt;br&gt;
     save(packages, file=&quot;Rpackages&quot;)</code></pre>
+<p><br></p>
+</div>
+<div id="reinstalling-r" class="section level4">
+<h4>Reinstalling R</h4>
+<p>For proper instructions to completely uninstall R go <a href="http://cran.r-project.org/doc/manuals/R-admin.html#Uninstalling-under-OS-X">here</a>.</p>
+<p>As of right now the correct way to do this on a Mac is to run this command in Terminal:</p>
+<pre><code>    sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app \ 
+    /usr/bin/R /usr/bin/Rscript</code></pre>
 <p><br></p>
 </div>
 <div id="after-reinstalling-r" class="section level4">
