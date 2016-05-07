@@ -1,13 +1,11 @@
 # Site settings
-title: Ian Maddaus
-email: spamforian@outlook.com
+title: R Reference
 description: > # this means to ignore newlines until "baseurl:"
-  This is what interests me or what I'm working on.
+  This is a reference for using R.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ianmadd.github.io" # the base hostname & protocol for your site
-twitter_username: ianmaddaus
 github_username:  IanMadd
-category-list: [The Basics, Reading Data, Subsetting & Transforming Data, Dates, Plotting, Extras]
+category-list: [The Basics, Reading Data, Subsetting & Transforming Data, Dates, Plotting, Extras, Statistics]
 
 # Build settings
 markdown: kramdown
