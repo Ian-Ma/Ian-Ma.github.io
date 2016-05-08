@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ianmadd.github.io" # the base hostname & protocol for your site
 github_username:  IanMadd
-category-list: [The Basics, Reading Data, Subsetting & Transforming Data, Dates, Plotting, Extras, Statistics]
+category-list: [The Basics, Reading Data, Subsetting & Transforming Data, Dates, Plotting, Extras, Statistics, Project]
 
 # Build settings
 markdown: kramdown
