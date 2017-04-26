@@ -6,7 +6,6 @@ title: "Linear Regression"
 desc: "Finding Linear Regressions, using cor, cor.test, lm, predict, and confint."
 ---
 
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -609,14 +608,14 @@ p +<span class="st"> </span><span class="kw">geom_point</span>() +<span class="s
 <p>To get the confidence intervals just change <code>interval=&quot;confidence&quot;</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">confidence =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">waiting =</span> <span class="kw">c</span>(<span class="kw">seq</span>(<span class="dv">43</span>,<span class="dv">96</span>, <span class="dt">by =</span> <span class="dv">1</span>)))
 confidence &lt;-<span class="st"> </span><span class="kw">cbind</span>(confidence, <span class="kw">predict</span>(Faithful.lm, confidence, <span class="dt">interval=</span><span class="st">&quot;confidence&quot;</span>, <span class="dt">level =</span> .<span class="dv">95</span>))
-<span class="kw">head</span>(prediction)</code></pre></div>
-<pre><code>##   waiting      fit       lwr      upr
-## 1      43 1.377986 0.3911100 2.364862
-## 2      44 1.453614 0.4672677 2.439960
-## 3      45 1.529242 0.5434063 2.515077
-## 4      46 1.604870 0.6195259 2.590213
-## 5      47 1.680498 0.6956263 2.665369
-## 6      48 1.756126 0.7717076 2.740543</code></pre>
+<span class="kw">head</span>(confidence)</code></pre></div>
+<pre><code>##   waiting      fit      lwr      upr
+## 1      43 1.377986 1.242485 1.513487
+## 2      44 1.453614 1.322027 1.585201
+## 3      45 1.529242 1.401539 1.656944
+## 4      46 1.604870 1.481019 1.728720
+## 5      47 1.680498 1.560464 1.800531
+## 6      48 1.756126 1.639870 1.872381</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(faithful, <span class="kw">aes</span>(waiting, eruptions))
 p +<span class="st"> </span><span class="kw">geom_point</span>() +<span class="st"> </span>
 <span class="st">    </span><span class="kw">geom_smooth</span>(<span class="dt">method=</span><span class="st">&quot;lm&quot;</span>) +<span class="st"> </span>
